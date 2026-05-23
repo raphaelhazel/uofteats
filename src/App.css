@@ -1,6 +1,6 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'DM Sans', 'Segoe UI', sans-serif; height: 100vh; overflow: hidden; }
-.app { display: flex; flex-direction: column; height: 100vh; }
+body { font-family: 'DM Sans', 'Segoe UI', sans-serif; }
+.app { height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 
 /* HEADER */
 .header { background: #1a1a1a; color: white; padding: 10px 16px; display: flex; align-items: center; gap: 10px; flex-shrink: 0; z-index: 1000; }
