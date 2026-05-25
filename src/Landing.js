@@ -83,7 +83,6 @@ export default function Landing({ onEnterMap }) {
                   <line x1="600" y1="0" x2="600" y2="280" stroke="#ccc" strokeWidth="9"/>
                   <rect x="240" y="100" width="280" height="90" rx="4" fill="#d4e6c3" opacity="0.8"/>
                   <text x="380" y="150" textAnchor="middle" fontSize="10" fill="#5a7a5a" fontFamily="sans-serif">University of Toronto St. George</text>
-                  {/* pins */}
                   <circle cx="310" cy="138" r="18" fill="#E24B4A" stroke="white" strokeWidth="3"/>
                   <text x="310" y="145" textAnchor="middle" fontSize="14">🍽️</text>
                   <circle cx="370" cy="122" r="18" fill="#BA7517" stroke="white" strokeWidth="3"/>
@@ -94,7 +93,6 @@ export default function Landing({ onEnterMap }) {
                   <text x="340" y="175" textAnchor="middle" fontSize="14">🌙</text>
                   <circle cx="480" cy="130" r="18" fill="#1D9E75" stroke="white" strokeWidth="3"/>
                   <text x="480" y="137" textAnchor="middle" fontSize="14">🥦</text>
-                  {/* popup */}
                   <rect x="490" y="60" width="170" height="80" rx="10" fill="white" filter="url(#shadow)"/>
                   <defs><filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="4" floodOpacity="0.15"/></filter></defs>
                   <text x="575" y="82" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#1a1a1a">Engineering Society</text>
@@ -103,7 +101,6 @@ export default function Landing({ onEnterMap }) {
                   <text x="575" y="130" textAnchor="middle" fontSize="9" fill="#aaa">📍 Bahen Centre · Today 12–2pm</text>
                   <polygon points="565,140 585,140 575,152" fill="white"/>
                 </svg>
-                {/* filter bar */}
                 <div className="l-mockup-filters">
                   <span>Filters</span>
                   <span className="l-mf-active">🍽️ Restaurants</span>
@@ -141,7 +138,7 @@ export default function Landing({ onEnterMap }) {
           <div className="l-steps">
             {[
               { num: '01', title: 'Browse the map', body: 'Open UofTEats and instantly see all active food sales on campus. Filter by food type, search by name, tap any pin for details.' },
-              { num: '02', title: 'Find your food', body: 'Tap any pin to see what a group is selling, the price, exact location, and when they\'re available. No app download needed.' },
+              { num: '02', title: 'Find your food', body: "Tap any pin to see what a group is selling, the price, exact location, and when they're available. No app download needed." },
               { num: '03', title: 'Show up & eat', body: 'Head to the location at the listed time. Support your fellow students while getting a great meal. Everyone wins.' },
             ].map((s, i) => (
               <div className="l-step" key={i}>
@@ -226,7 +223,7 @@ export default function Landing({ onEnterMap }) {
         <div className="l-footer-links">
           <a href="#how">How it works</a>
           <a href="#groups">For Groups</a>
-          <a href="#" onClick={onEnterMap}>Map</a>
+          <button onClick={onEnterMap} className="l-footer-btn">Map</button>
           <a href="mailto:hello@uofteats.ca">Contact</a>
         </div>
         <div className="l-footer-copy">© 2025 UofTEats</div>
