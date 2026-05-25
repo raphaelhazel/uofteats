@@ -271,3 +271,12 @@
   .l-footer-links { flex-wrap: wrap; justify-content: center; }
   .l-mockup-filters { display: none; }
 }
+
+/* Footer button */
+.l-footer-btn {
+  background: none; border: none; color: #999; font-size: 13px;
+  cursor: pointer; font-family: inherit; padding: 0;
+  transition: color .2s;
+}
+.l-footer-btn:hover { color: #0f0f0f; }
+.landing.dark .l-footer-btn:hover { color: white; }
